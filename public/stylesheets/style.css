@@ -1,0 +1,43 @@
+.review {padding-bottom: 5px;}
+.panel-body.review-container {padding-top: 0;}
+.review-header {margin-bottom: 10px;}
+.reviewAuthor {margin: 0 5px;}
+.reviewTimestamp {color: #ccc;}
+
+#filter {margin-left: 4px;}
+
+img {
+    opacity: 0.2;
+}
+
+.thText {
+    font-weight: bold;
+    color: black;
+    background-color:white;
+}
+
+.tdWidth {
+    width: 200px;
+    text-align: center;
+}
+
+.highlightedText {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bgLIB{
+    background: red;
+}
+.bgPC{
+    background: blue;
+}
+.bgNDP{
+    background: orange;
+}
+.bgGRN{
+    background: green;
+}
+.bgOTHER{
+    background: grey;
+}

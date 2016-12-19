@@ -1,0 +1,28 @@
+﻿<navigation></navigation>
+<div class="container">
+  <page-header content="vm.pageHeader"></page-header>
+
+  <div>
+    <div >
+      <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+        <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" >
+
+          <div class="row">
+            <div class="col-sm-1">&nbsp;</div>
+            <div class="col-xs-12 col-sm-10">
+              <div><span for="filter">Name:</span><span>{{ slide.riding.name }}</span></div>
+              <div><span for="filter">Vote Total:</span><span>{{ slide.voteTotal }}</span></div>
+              <table riding-result riding="slide"></table>
+            </div>
+          </div>
+          <img ng-src="{{slide.image}}" style="margin:auto;">
+          <div class="carousel-caption">
+            <p>{{slide.text}}</p>
+          </div>
+        </uib-slide>
+      </uib-carousel>
+    </div>
+  </div>
+
+  <footer-generic></footer-generic>
+</div>

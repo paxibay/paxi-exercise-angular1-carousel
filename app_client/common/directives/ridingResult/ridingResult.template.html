@@ -1,0 +1,24 @@
+<div>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th class="text-center">Name</th>
+        <th class="text-center">PartyId</th>
+        <th class="text-center">Votes</th>
+        <th class="text-center">Elected</th>
+        <th class="text-center">Party Code</th>
+        <th class="text-center">Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="result in local.riding.results | orderBy: 'partyId'" >
+        <td>{{result.name}}</td>
+        <td>{{result.partyId}}</td>
+        <td>{{result.votes}}</td>
+        <td>{{result.isElected}}</td>
+        <td>{{result.partyCode}}</td>
+        <td>{{(result.votes/slide.voteTotal*100 | number:2 | number) + '%'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
